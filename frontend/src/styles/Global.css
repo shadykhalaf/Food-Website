@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #FB9333;
+    --secondary-color: #121212;
+    --light-color: #FFFFFF;
+    --accent-color: #FFCB45;
+    --text-color: #121212;
+    --text-light: #4D4D4D;
+    --gray-light: #F5F5F5;
+    --gray-medium: #E5E5E5;
+    --success-color: #2ed573;
+    --danger-color: #ff4757;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .btn-primary {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 20px rgba(251, 147, 51, 0.3);
+  }
+  
+  .btn-primary:hover {
+    background: #ec8521;
+    transform: translateY(-2px);
+  }
+  
+  .btn-secondary {
+    background: var(--light-color);
+    color: var(--primary-color);
+    padding: 0.8rem 1.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background: #fff8ef;
+    transform: translateY(-2px);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  section {
+    padding: 5rem 0;
+  }
+  
+  h1, h2, h3, h4 {
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+  }
+  
+  .text-primary {
+    color: var(--primary-color);
+  }
+  
+  .section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+  
+  .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background: var(--primary-color);
+  }
+  
+  .page-padding {
+    padding-top: 80px; /* To account for fixed navbar */
+  }
